@@ -6,6 +6,8 @@ import Aleatorio from './componentes/basicos/Aleatorio'
 import './App.css'
 import Familia from "./componentes/basicos/Familia";
 import FamiliaMembro from "./componentes/basicos/FamiliaMembro";
+import ListaNomes from "./componentes/Repeticao/ListaNomes";
+import ListaProdutos from "./componentes/Repeticao/ListaProdutos";
 
 export default function App(props){
     return(
@@ -13,6 +15,15 @@ export default function App(props){
           <h2> Fundamentos</h2>
           
           <div className="Cards">
+            
+            <Card title="Lista-Produtos" color="#5C62F8" className="Tabela">
+              <ListaProdutos></ListaProdutos>
+
+            </Card>
+
+            <Card title="Lista-Repetição" color="#1756DB"> 
+              <ListaNomes></ListaNomes>
+            </Card>
 
             <Card title="Familia e filhos" color="#5AABF5">
               <Familia sobrenome="Pintao">
