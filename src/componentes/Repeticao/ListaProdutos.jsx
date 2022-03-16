@@ -1,12 +1,13 @@
 import React from "react";
 import produtos from "../../data/Produtos";
+import './ListaProdutos.css'
 
 export default function ListaProdutos (props) {
 
     function LinhasTabela(){
-        return produtos.map(produto => {
+        return produtos.map((produto, i) => {
             return(
-                <tr>
+                <tr key={produto.id} className={i % 2 == 0 ? 'Par' : 'Impar'}>
                 <td>{produto.id}</td>
                 <td>{produto.nome}</td>
                 <td>{produto.preco}</td>
@@ -15,8 +16,8 @@ export default function ListaProdutos (props) {
         })
     }
     return(
-        <>
-            <table border='1px' className="Tabela">
+        <div className="Tabela">
+            <table>
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -28,6 +29,6 @@ export default function ListaProdutos (props) {
                     {LinhasTabela()}
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }
