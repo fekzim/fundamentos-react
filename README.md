@@ -56,7 +56,7 @@ Crie um novo arquivo com a extensão jsx de preferencia e la escreva
 
 **É importante lembrar que todo componente deve ter uma <div> ou fragmento "<> </>" onde o seu conteudo deve estar dentro senão não sera possivel criar o componente**
 
-Você importa o react para que ele reconheça as funçoes do proprio react e então exporta uma função que você pode dar o nome que você desejar, como parametro a função recebe **props** que se trata de propriedades que o componente pai pode passar para esse componente, você então coloca um return e la deve criar uma <div> ou fragmento <> </> onde dentro estara o conteudo do componente.
+Você importa o react para que ele reconheça as funçoes do proprio react e então exporta uma função que você pode dar o nome que você desejar, como parametro a função recebe **props** que se trata de propriedades que o componente pai pode passar para esse componente, você então coloca um return e la deve criar uma tag "div" ou fragmento <> </> onde dentro estara o conteudo do componente.
 
 **Se for criar uma função ou variaveis do componente, crie antes do Return**
 
@@ -147,7 +147,7 @@ Você cria uma constante onde ela recebe o *array** e usa a função **.map()** 
    <div className="">
 ~~~
 
-** Você pode usar props passadas do componente para mexer com o css do componente, você simplesmente ira passar os dados do props que você deseja para um objeto e então dentro da div que você deseje coloque o elemento style e coloque o objeto, o Css ira reconhecer.**
+**Você pode usar props passadas do componente para mexer com o css do componente, você simplesmente ira passar os dados do props que você deseja para um objeto e então dentro da div que você deseje coloque o elemento style e coloque o objeto, o Css ira reconhecer.**
 
 ~~~jsx
     const   Estilizado = {
