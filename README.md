@@ -95,6 +95,13 @@ Você pode passar valores para o componente simplesmente quando chama ele e dent
 
 **você pode usar o props.children para que todas as informações do filho sejam mostradas**
 
+~~~jsx
+    {props.titulo}
+~~~
+
+    Assim que seria para abrir o valor titulo recebido como props
+
+
 ## Criando Listas com react
    Essa seção é bem util na criação de listas ou quando é necessario 1 unico componente renderizar varias linhas por exemplo.
 
