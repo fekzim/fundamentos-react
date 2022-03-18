@@ -8,14 +8,31 @@ import Familia from "./componentes/basicos/Familia";
 import FamiliaMembro from "./componentes/basicos/FamiliaMembro";
 import ListaNomes from "./componentes/Repeticao/ListaNomes";
 import ListaProdutos from "./componentes/Repeticao/ListaProdutos";
+import IndiretaFilho from "./componentes/comunicacao/IndiretaFilho";
+import IndiretaPai from "./componentes/comunicacao/IndiretaPai";
+
 
 export default function App(props){
     return(
         <div id="App">
           <h2> Fundamentos</h2>
-          
-          <div className="Cards">
             
+           
+          <div className="Cards">
+
+          <Card title="Comunicação direta">
+            <IndiretaPai></IndiretaPai>
+          </Card>
+          {/*
+              <Card title="Comunicação direta">
+              <IndiretaPai>
+
+              </IndiretaPai>
+              </Card>
+    */}
+             
+
+
             <Card title="Lista-Produtos" color="#5C62F8" className="Tabela">
               <ListaProdutos></ListaProdutos>
 
