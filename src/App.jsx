@@ -10,7 +10,8 @@ import ListaNomes from "./componentes/Repeticao/ListaNomes";
 import ListaProdutos from "./componentes/Repeticao/ListaProdutos";
 import IndiretaFilho from "./componentes/comunicacao/IndiretaFilho";
 import IndiretaPai from "./componentes/comunicacao/IndiretaPai";
-
+import Input from "./componentes/Controlador/Input";
+import Contabilizar from "./componentes/Controlador/Contador";
 
 export default function App(props){
     return(
@@ -19,6 +20,14 @@ export default function App(props){
             
            
           <div className="Cards">
+
+          <Card title="Contabilizador">
+            <Contabilizar numeroInicial={10}></Contabilizar>
+          </Card>
+
+          <Card title="Display dinamico" color="blue">
+            <Input> </Input>
+          </Card>
 
           <Card title="Comunicação direta">
             <IndiretaPai></IndiretaPai>
