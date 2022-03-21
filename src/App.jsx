@@ -12,6 +12,7 @@ import IndiretaFilho from "./componentes/comunicacao/IndiretaFilho";
 import IndiretaPai from "./componentes/comunicacao/IndiretaPai";
 import Input from "./componentes/Controlador/Input";
 import Contabilizar from "./componentes/Controlador/Contador";
+import Mega from "./componentes/megaSena/Mega";
 
 export default function App(props){
     return(
@@ -20,6 +21,10 @@ export default function App(props){
             
            
           <div className="Cards">
+
+          <Card title="MegaSena">
+            <Mega></Mega>
+          </Card>
 
           <Card title="Contabilizador">
             <Contabilizar numeroInicial={10}></Contabilizar>
